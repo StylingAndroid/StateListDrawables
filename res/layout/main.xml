@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<TextView android:layout_width="match_parent" android:id="@+id/title"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:layout_height="wrap_content" style="@+style/title"
+		android:text="Styling Android" />
+	<TextView android:layout_width="wrap_content" android:id="@+id/body"
+		android:layout_alignLeft="@id/title" android:layout_below="@id/title"
+		android:layout_height="wrap_content" style="@+style/body"
+		android:text="This is a demonstration of how to use vector drawables to style a dialog box." />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_height="wrap_content" android:weightSum="2"
+		android:layout_below="@+id/body" android:layout_width="match_parent"
+		android:gravity="center" style="@style/dialog_footer">
+		<Button android:text="Close" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/close"
+			android:layout_weight="1" style="@style/button">
+		</Button>
+	</LinearLayout>
+</RelativeLayout>
